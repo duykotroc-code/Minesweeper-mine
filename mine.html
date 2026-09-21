@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dò Mìn</title>
+    <link rel="stylesheet" href="mine.css">
+    <link rel="icon" type="x/icon" href="mine.png">
+</head>
+
+<body>
+
+    <main class="game">
+        <section class="panel">
+
+            <header class="top">
+                <div>
+                    <h1>🖕 Dò Mìn</h1>
+                </div>
+
+                <button id="newGame" class="new-game">
+                    ⟳ Chơi lại
+                </button>
+            </header>
+
+            <div class="difficulty">
+
+                <button
+                    class="difficulty-btn active"
+                    data-level="easy">
+                    Dễ GG
+                </button>
+
+                <button
+                    class="difficulty-btn"
+                    data-level="medium">
+                    Bth EZ
+                </button>
+
+                <button
+                    class="difficulty-btn"
+                    data-level="hard">
+                    Khó Như Chó
+                </button>
+
+            </div>
+
+            <div class="stats">
+
+                <div>
+                    📐 <b id="boardSize">9×9</b>
+                </div>
+
+                <div>
+                    🖕 <b id="mineCount">10</b>
+                </div>
+
+                <div>
+                    🫃🏿 <b id="flagCount">0</b>
+                </div>
+
+                <div>
+                    ⏱️ <b id="time">0</b>s
+                </div>
+
+            </div>
+
+            <div
+                id="message"
+                class="message">
+            </div>
+
+            <div class="board-wrap">
+                <div
+                    id="board"
+                    class="board">
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="mine.js"></script>
+</body>
+</html>
